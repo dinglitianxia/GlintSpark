@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= siteTitle %></title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- 添加代码高亮支持 -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/"><%= siteName %></a>
+            </div>
+            <ul class="nav-menu">
+                <% menuItems.forEach(function(item) { %>
+                    <li><a href="<%= item.link %>"><%= item.name %></a></li>
+                <% }); %>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <%- content %>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <% if (social.github) { %>
+                    <a href="https://github.com/<%= social.github %>" target="_blank">GitHub</a>
+                <% } %>
+                <% if (social.linkedin) { %>
+                    <a href="<%= social.linkedin %>" target="_blank">LinkedIn</a>
+                <% } %>
+            </div>
+            <div class="copyright">
+                © <%= new Date().getFullYear() %> <%= siteName %>. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html> 

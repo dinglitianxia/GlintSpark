@@ -1,0 +1,10 @@
+my-blog/
+├── posts/                 # 博客文章目录
+├── themes/               # 主题文件
+│   └── professional/    # 专业主题
+├── config.json          # Gridea配置文件
+├── assets/             # 静态资源
+│   ├── images/        # 图片资源
+│   ├── css/          # 样式文件
+│   └── js/           # JavaScript文件
+└── templates/         # 模板文件 

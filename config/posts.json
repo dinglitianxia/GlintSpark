@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "content": "\r\n# 项目管理经验分享\r\n\r\n作为一名产品经理，我想分享一下我在最近项目中的一些心得体会...\r\n\r\n## 项目背景\r\n\r\n我们开发了一个企业级应用系统，主要解决...\r\n\r\n## 关键挑战\r\n\r\n1. 需求管理\r\n2. 团队协作\r\n3. 技术选型\r\n\r\n## 解决方案\r\n\r\n我们采用了以下方案... ",
+      "data": {
+        "title": "我的第一个项目经验分享",
+        "date": "2024-03-20 00:00:00",
+        "tags": [
+          "项目管理",
+          "经验分享"
+        ],
+        "published": false,
+        "hideInList": false,
+        "isTop": false
+      },
+      "isEmpty": false,
+      "excerpt": "",
+      "abstract": "",
+      "fileName": "first-post"
+    }
+  ],
+  "tags": [
+    {
+      "name": "项目管理",
+      "slug": "qT40NmdLIr",
+      "used": true
+    },
+    {
+      "name": "经验分享",
+      "slug": "wgv3XAu7ofe",
+      "used": true
+    }
+  ],
+  "menus": [
+    {
+      "link": "/",
+      "name": "首页",
+      "openType": "Internal"
+    },
+    {
+      "link": "/archives",
+      "name": "归档",
+      "openType": "Internal"
+    },
+    {
+      "link": "/tags",
+      "name": "标签",
+      "openType": "Internal"
+    },
+    {
+      "link": "/post/about",
+      "name": "关于",
+      "openType": "Internal"
+    }
+  ]
+}
