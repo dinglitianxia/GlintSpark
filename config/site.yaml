@@ -1,0 +1,21 @@
+title: "我的专业博客"
+description: "分享技术与思考"
+url: "https://yourusername.github.io"
+repository: "yourusername/yourusername.github.io"
+author:
+  name: "您的名字"
+  email: "your.email@example.com"
+  avatar: "/images/avatar.jpg"
+
+# 导航菜单配置
+menu:
+  - name: "首页"
+    path: "/"
+  - name: "文章"
+    path: "/posts"
+  - name: "分类"
+    path: "/categories"
+  - name: "标签"
+    path: "/tags"
+  - name: "关于"
+    path: "/about" 

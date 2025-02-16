@@ -1,0 +1,9 @@
+blog/
+├── posts/          # 博客文章目录
+├── themes/         # 主题目录
+├── config/         # 配置文件目录
+├── public/         # 生成的静态文件
+└── src/
+    ├── components/ # 组件目录
+    ├── layouts/    # 布局目录
+    └── pages/      # 页面目录 

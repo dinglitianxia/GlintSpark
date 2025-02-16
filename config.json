@@ -1,32 +1,5 @@
 {
-  "siteName": "专业技术博客",
-  "siteDescription": "分享技术经验与项目管理心得",
-  "sourceFolder": "./posts",
-  "outputFolder": "./public",
-  "theme": "professional",
-  "domain": "https://yourusername.github.io",
-  "dateFormat": "YYYY-MM-DD",
-  "social": {
-    "github": "your-github-username",
-    "linkedin": "your-linkedin-profile",
-    "email": "your-email@domain.com"
-  },
-  "menuItems": [
-    {
-      "name": "首页",
-      "link": "/"
-    },
-    {
-      "name": "项目案例",
-      "link": "/projects"
-    },
-    {
-      "name": "技术博客",
-      "link": "/blog"
-    },
-    {
-      "name": "关于我",
-      "link": "/about"
-    }
-  ]
+  "outputFolder": "docs",
+  "postPath": "posts",
+  "htmlFolder": ""
 } 

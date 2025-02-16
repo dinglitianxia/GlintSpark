@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= siteTitle %></title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- 使用与template.ejs相同的头部 -->
+    <%- include('header') %>
+
+    <main class="main-content">
+        <div class="posts-list">
+            <% posts.forEach(function(post) { %>
+                <article class="post-preview">
+                    <h2 class="post-title">
+                        <a href="<%= post.link %>"><%= post.title %></a>
+                    </h2>
+                    <div class="post-meta">
+                        <span class="post-date"><%= post.date %></span>
+                        <% if (post.tags && post.tags.length > 0) { %>
+                            <span class="post-tags">
+                                <% post.tags.forEach(function(tag) { %>
+                                    <a href="/tag/<%= tag %>" class="tag">#<%= tag %></a>
+                                <% }); %>
+                            </span>
+                        <% } %>
+                    </div>
+                    <div class="post-excerpt">
+                        <%= post.excerpt %>
+                    </div>
+                    <a href="<%= post.link %>" class="read-more">阅读更多</a>
+                </article>
+            <% }); %>
+        </div>
+    </main>
+
+    <!-- 使用与template.ejs相同的底部 -->
+    <%- include('footer') %>
+</body>
+</html> 
